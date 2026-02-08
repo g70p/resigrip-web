@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ResiGrip™ | A preparar a próxima jogada</title>
+  <style>
+    :root {
+      --gold: #c89553;
+      --dark: #2b1d18;
+      --sand: #d2b48c;
+    }
+    body, html {
+      margin: 0; padding: 0; width: 100%; height: 100%;
+      background-color: var(--dark);
+      /* Imagem de fundo opcional que remeta a textura de terra/resina */
+      background-image: linear-gradient(rgba(43, 29, 24, 0.9), rgba(43, 29, 24, 0.9)), 
+                        url('https://images.unsplash.com/photo-1593110050241-ee7ce35e971e?auto=format&fit=crop&q=80&w=1600'); 
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    .content {
+      padding: 20px;
+      z-index: 2;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .logo span { color: var(--gold); }
+    
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 20px auto;
+    }
+    
+    h1 { font-size: 1.5rem; font-weight: 300; letter-spacing: 1px; margin-bottom: 20px; }
+    p { color: #ccc; max-width: 400px; margin: 0 auto 30px; line-height: 1.6; }
+    
+    .badge {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      padding: 8px 15px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* Efeito de partículas de pó simuladas */
+    .dust {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png');
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="dust"></div>
+  <div class="content">
+    <div class="logo">RESI<span>GRIP</span>™</div>
+    <div class="badge">Aderência Pura. 100% Natural.</div>
+    <div class="divider"></div>
+    <h1>A preparar a próxima jogada.</h1>
+    <p>Estamos a otimizar a nossa plataforma para garantir que nunca perdes o controlo no campo. Voltamos em breve com o grip perfeito.</p>
+    
+    <div style="margin-top: 40px;">
+      <p style="font-size: 0.8rem; margin-bottom: 10px;">Precisas de aderência imediata?</p>
+      <a href="mailto:info@resigrip.pt" style="color: var(--gold); text-decoration: none; font-weight: bold;">info@resigrip.pt</a>
+    </div>
+  </div>
+</body>
+</html>
